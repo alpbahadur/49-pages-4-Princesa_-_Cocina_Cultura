@@ -637,11 +637,11 @@
             reset() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 4 + 2;
-                this.speedX = Math.random() * 0.5 - 0.25;
-                this.speedY = Math.random() * 0.5 - 0.25;
-                this.opacity = Math.random() * 0.25 + 0.15;
-                this.color = ['rgba(234, 224, 213, 0.4)', 'rgba(212, 175, 55, 0.35)', 'rgba(94, 109, 104, 0.3)', 'rgba(26, 42, 36, 0.25)'][Math.floor(Math.random() * 4)];
+                this.size = Math.random() * 4.5 + 2.5;
+                this.speedX = Math.random() * 0.65 - 0.325;
+                this.speedY = Math.random() * 0.65 - 0.325;
+                this.opacity = Math.random() * 0.3 + 0.25;
+                this.color = ['rgba(234, 224, 213, 0.55)', 'rgba(212, 175, 55, 0.48)', 'rgba(94, 109, 104, 0.4)', 'rgba(26, 42, 36, 0.32)'][Math.floor(Math.random() * 4)];
                 this.rotation = Math.random() * Math.PI * 2;
                 this.rotationSpeed = (Math.random() - 0.5) * 0.015;
                 this.type = Math.random() > 0.5 ? 'leaf' : 'petal';
@@ -703,7 +703,7 @@
 
         // Create particles
         const particles = [];
-        const particleCount = window.innerWidth < 768 ? 25 : 35; // Fewer particles for subtle effect
+        const particleCount = window.innerWidth < 768 ? 32 : 48; // Balanced particle count
 
         for (let i = 0; i < particleCount; i++) {
             particles.push(new Particle());
