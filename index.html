@@ -30,6 +30,13 @@
             font-weight: 200;
         }
 
+        /* Ensure sections are visible but below leaves */
+        section {
+            position: relative;
+            z-index: 2;
+            background-clip: padding-box;
+        }
+
         nav, footer {
             position: relative;
             z-index: 1000;
@@ -112,12 +119,14 @@
         /* ========== HERO SECTION ========== */
         .hero-overlay {
             background: linear-gradient(135deg, rgba(26, 42, 36, 0.7), rgba(26, 42, 36, 0.4));
+            z-index: 1;
         }
 
         .hero-text {
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 1.5s ease-out 0.5s forwards;
+            z-index: 10;
         }
 
         @keyframes fadeInUp {
