@@ -154,6 +154,36 @@
             box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
         }
 
+        .btn-outline {
+            background: transparent;
+            color: #1a2a24;
+            border: 2px solid #1a2a24;
+            padding: 1rem 2.5rem;
+            border-radius: 0.375rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-outline:hover {
+            background: #1a2a24;
+            color: #EAE0D5;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(26, 42, 36, 0.2);
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #D4AF37;
+            margin: 1.5rem auto;
+        }
+
         /* ========== IMAGE EFFECTS ========== */
         .image-hover {
             overflow: hidden;
@@ -266,9 +296,9 @@
             <div class="desktop-menu hidden md:flex items-center space-x-8">
                 <a href="#home" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Home</a>
                 <a href="#story" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Our Story</a>
-                <a href="#menu" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">The Menu</a>
-                <a href="#rum" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Rum Library</a>
-                <a href="#farm" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Finca La Zafra</a>
+                <a href="#menu" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Menu</a>
+                <a href="#rum" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Rum</a>
+                <a href="#events" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Events</a>
                 <a href="#contact" class="text-[#EAE0D5] hover:text-[#D4AF37] transition font-light text-sm uppercase tracking-wider">Contact</a>
                 <a href="tel:787-723-7878" class="btn-gold">Reservations</a>
             </div>
@@ -287,9 +317,9 @@
         <div class="flex flex-col items-center justify-center h-full space-y-8">
             <a href="#home" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Home</a>
             <a href="#story" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Our Story</a>
-            <a href="#menu" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">The Menu</a>
-            <a href="#rum" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Rum Library</a>
-            <a href="#farm" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Finca La Zafra</a>
+            <a href="#menu" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Menu</a>
+            <a href="#rum" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Rum</a>
+            <a href="#events" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Events</a>
             <a href="#contact" class="text-[#EAE0D5] hover:text-[#D4AF37] transition text-xl font-light uppercase tracking-wider mobile-menu-link">Contact</a>
             <a href="tel:787-723-7878" class="btn-gold mt-4">Reservations</a>
         </div>
@@ -442,71 +472,115 @@
         </div>
     </section>
 
+    <!-- Live Music Section -->
+    <section class="py-20 px-6 bg-[#EAE0D5] content-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="image-hover rounded-lg overflow-hidden shadow-2xl">
+                    <img src="./assets/image_9.jpg" alt="Live Music Performance" class="w-full h-96 object-cover">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl text-[#1a2a24] mb-4">Live Music</h2>
+                    <div class="decorative-line mx-0"></div>
+                    <p class="text-[#5E6D68] text-lg leading-relaxed mb-6">
+                        Immerse yourself in the rhythms of Puerto Rico. Our garden comes alive with authentic live music performances that celebrate the island's rich musical heritage, from traditional trova to contemporary sounds.
+                    </p>
+                    <p class="text-[#5E6D68] text-lg leading-relaxed">
+                        Every evening becomes a cultural celebration as talented local musicians transform your dinner into an unforgettable sensory journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Events Section -->
-    <section class="py-24 px-6 content-section">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl text-[#1a2a24] mb-4">Private Events & Live Music</h2>
-            <div class="decorative-line"></div>
-            <p class="text-[#5E6D68] text-lg max-w-3xl mx-auto mb-12">
-                Transform your special occasion into an unforgettable experience. Our enchanting garden venue provides the perfect backdrop for weddings, corporate events, and celebrations, complemented by live music performances.
+    <section id="events" class="py-24 px-6 md:px-12 bg-white content-section">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl mb-4 text-[#1a2a24]">Private Events & Celebrations</h2>
+            <div class="divider"></div>
+            <p class="text-xl text-[#5E6D68] mb-16 max-w-3xl mx-auto">
+                Host your special occasion in our magical garden setting. From intimate gatherings to grand celebrations, we create unforgettable experiences with live music, exceptional cuisine, and our legendary hospitality.
             </p>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="image-hover rounded-lg overflow-hidden shadow-2xl">
-                    <img src="./assets/image_9.jpg" alt="Event Space" class="w-full h-80 object-cover">
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="p-8 bg-[#F7F5F2] rounded-sm">
+                    <div class="text-4xl mb-4 text-[#D4AF37]">♪</div>
+                    <h3 class="text-2xl mb-3 text-[#1a2a24]">Live Music</h3>
+                    <p class="text-[#5E6D68]">Enjoy authentic Puerto Rican music performances that complement your dining experience.</p>
                 </div>
-                <div class="image-hover rounded-lg overflow-hidden shadow-2xl">
-                    <img src="./assets/image_11.jpg" alt="Garden Venue" class="w-full h-80 object-cover">
+
+                <div class="p-8 bg-[#F7F5F2] rounded-sm">
+                    <div class="text-4xl mb-4 text-[#D4AF37]">❦</div>
+                    <h3 class="text-2xl mb-3 text-[#1a2a24]">Weddings</h3>
+                    <p class="text-[#5E6D68]">Create lasting memories in our enchanting garden surrounded by history and nature.</p>
+                </div>
+
+                <div class="p-8 bg-[#F7F5F2] rounded-sm">
+                    <div class="text-4xl mb-4 text-[#D4AF37]">✦</div>
+                    <h3 class="text-2xl mb-3 text-[#1a2a24]">Corporate Events</h3>
+                    <p class="text-[#5E6D68]">Impress clients and colleagues with an extraordinary venue and culinary experience.</p>
                 </div>
             </div>
 
-            <a href="mailto:princesapr@zaprici.com" class="btn-gold">Inquire About Events</a>
+            <div class="mt-12">
+                <a href="#contact" class="btn-gold mr-4 mb-4 md:mb-0">Inquire About Events</a>
+                <a href="#contact" class="btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section class="py-32 px-6 bg-gradient-to-b from-[#1a2a24] to-[#2a3a34] text-white content-section">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-5xl md:text-6xl text-[#EAE0D5] mb-6 font-extralight">Reserve Your Table</h2>
+            <div class="decorative-line"></div>
+            <p class="text-xl md:text-2xl text-[#EAE0D5] mb-4 max-w-3xl mx-auto opacity-90">
+                Step into history. Savor the flavors of 19th-century Puerto Rico.
+            </p>
+            <p class="text-lg text-[#EAE0D5] mb-12 max-w-2xl mx-auto opacity-80">
+                Limited seating in our enchanted garden. Book your unforgettable culinary journey today.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+                <a href="tel:787-723-7878" class="btn-gold text-lg px-12 py-4 transform hover:scale-105">
+                    Call 787-723-7878
+                </a>
+                <a href="mailto:princesapr@zaprici.com" class="text-[#D4AF37] hover:text-[#EAE0D5] transition text-lg font-light uppercase tracking-wider">
+                    Email Us →
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 pt-12 border-t border-[#3a4a44]">
+                <div>
+                    <h3 class="text-lg text-[#D4AF37] mb-2 uppercase tracking-wider font-light">Location</h3>
+                    <p class="text-[#EAE0D5] opacity-90">Paseo de la Princesa</p>
+                    <p class="text-[#EAE0D5] opacity-90">Old San Juan, PR 00901</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg text-[#D4AF37] mb-2 uppercase tracking-wider font-light">Hours</h3>
+                    <p class="text-[#EAE0D5] opacity-90">Tuesday - Sunday</p>
+                    <p class="text-[#EAE0D5] opacity-90">5:00 PM - 11:00 PM</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg text-[#D4AF37] mb-2 uppercase tracking-wider font-light">Follow Us</h3>
+                    <a href="https://www.facebook.com/princesacocinacultura/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#EAE0D5] hover:text-[#D4AF37] transition opacity-90">
+                        <img src="./assets/image_5.png" alt="Facebook" class="w-6 h-6 mr-2">
+                        Facebook
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 bg-[#EAE0D5] content-section">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl text-[#1a2a24] mb-4">Visit Us</h2>
-                <div class="decorative-line"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-2xl text-[#1a2a24] mb-4 font-light">Location</h3>
-                    <p class="text-[#5E6D68] mb-2">Paseo de la Princesa</p>
-                    <p class="text-[#5E6D68] mb-6">Old San Juan, PR 00901</p>
-
-                    <h3 class="text-2xl text-[#1a2a24] mb-4 font-light">Hours</h3>
-                    <p class="text-[#5E6D68] mb-2">Tuesday - Sunday</p>
-                    <p class="text-[#5E6D68] mb-6">5:00 PM - 11:00 PM</p>
-
-                    <h3 class="text-2xl text-[#1a2a24] mb-4 font-light">Contact</h3>
-                    <p class="text-[#5E6D68] mb-2">
-                        <a href="tel:787-723-7878" class="hover:text-[#D4AF37] transition">787-723-7878</a>
-                    </p>
-                    <p class="text-[#5E6D68]">
-                        <a href="mailto:princesapr@zaprici.com" class="hover:text-[#D4AF37] transition">princesapr@zaprici.com</a>
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl text-[#1a2a24] mb-4 font-light">Reserve Your Experience</h3>
-                    <p class="text-[#5E6D68] mb-6">
-                        Call us directly to reserve your table and experience the magic of historic Puerto Rican cuisine in our enchanted garden setting.
-                    </p>
-                    <a href="tel:787-723-7878" class="btn-gold block text-center">Call for Reservations</a>
-
-                    <div class="mt-8">
-                        <h4 class="text-lg text-[#1a2a24] mb-3 font-light">Follow Us</h4>
-                        <a href="https://www.facebook.com/princesacocinacultura/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#5E6D68] hover:text-[#D4AF37] transition">
-                            <img src="./assets/image_5.png" alt="Facebook" class="w-6 h-6 mr-2">
-                            Facebook
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="py-16 px-6 bg-[#EAE0D5] content-section">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-[#5E6D68] text-sm">
+                For private events, weddings, or special inquiries:
+                <a href="mailto:princesapr@zaprici.com" class="text-[#D4AF37] hover:text-[#1a2a24] transition font-medium">princesapr@zaprici.com</a>
+            </p>
         </div>
     </section>
 
@@ -523,9 +597,9 @@
                     <h4 class="text-lg mb-4 font-light">Quick Links</h4>
                     <ul class="space-y-2 text-sm opacity-80">
                         <li><a href="#story" class="hover:text-[#D4AF37] transition">Our Story</a></li>
-                        <li><a href="#menu" class="hover:text-[#D4AF37] transition">The Menu</a></li>
+                        <li><a href="#menu" class="hover:text-[#D4AF37] transition">Menu</a></li>
                         <li><a href="#rum" class="hover:text-[#D4AF37] transition">Rum Library</a></li>
-                        <li><a href="#farm" class="hover:text-[#D4AF37] transition">Finca La Zafra</a></li>
+                        <li><a href="#events" class="hover:text-[#D4AF37] transition">Events</a></li>
                     </ul>
                 </div>
 
@@ -570,8 +644,8 @@
                 this.size = Math.random() * 5 + 3;
                 this.speedX = Math.random() * 0.8 - 0.4;
                 this.speedY = Math.random() * 0.8 - 0.4;
-                this.opacity = Math.random() * 0.3 + 0.2;
-                this.color = ['rgba(234, 224, 213, 0.5)', 'rgba(212, 175, 55, 0.4)', 'rgba(94, 109, 104, 0.3)', 'rgba(26, 42, 36, 0.2)'][Math.floor(Math.random() * 4)];
+                this.opacity = Math.random() * 0.4 + 0.35;
+                this.color = ['rgba(234, 224, 213, 0.7)', 'rgba(212, 175, 55, 0.6)', 'rgba(94, 109, 104, 0.5)', 'rgba(26, 42, 36, 0.4)'][Math.floor(Math.random() * 4)];
                 this.rotation = Math.random() * Math.PI * 2;
                 this.rotationSpeed = (Math.random() - 0.5) * 0.015;
                 this.type = Math.random() > 0.5 ? 'leaf' : 'petal';
