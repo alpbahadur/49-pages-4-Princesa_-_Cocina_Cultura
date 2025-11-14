@@ -30,6 +30,13 @@
             font-weight: 200;
         }
 
+        /* Ensure sections don't obstruct the floating leaves animation */
+        section {
+            position: relative;
+            /* Explicit low z-index ensures canvas (z-index: 999) renders above all sections */
+            z-index: 0;
+        }
+
         nav, footer {
             position: relative;
             z-index: 1000;
